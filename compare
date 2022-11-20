@@ -1,0 +1,265 @@
+style.
+   * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   }
+   /*tipografia y color de titulos completar*/
+   body {
+   font-family: &apos;Open Sans&apos;, sans-serif;
+   }
+   h1{
+   color: red;
+   }
+   .contenedor {
+   padding: 60px 0;
+   width: 90%;
+   max-width: 1000px;
+   margin: auto;
+   overflow: hidden;
+   }
+   .titulo {
+   color: #470657;
+   font-size: 30px;
+   text-align: center;
+   margin-bottom: 60px;
+   }
+   /*header y efecto ola*/
+   header {
+   width: 100%;
+   height: 600px;
+   background: #00c3ff;
+   background: -webkit-linear-gradient(to right, hsla(261, 51%, 48%, 0.678), hsla(271, 88%, 46%, 0.288)), url(../img/portada.jpeg);
+   background: linear-gradient(to right, hsla(261, 52%, 38%, 0.733), hsla(271, 88%, 46%, 0.288)), url(../img/portada.jpeg);
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+   }
+   header .textos-header {
+   display: flex;
+   height: 430px;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   }
+   .textos-header h1 {
+   font-size: 70px;
+   color: rgb(224, 255, 255);
+   }
+   .textos-header h2 {
+   font-size: 45px;
+   color: rgb(224, 255, 255);
+   }
+   .textos-header h3 {
+   font-size: 38px;
+   color: rgb(224, 255, 255);
+   }
+   .wave {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   }
+   /*que es start review*/
+   .contendedor-inicio {
+   display: flex;
+   justify-content: space-evenly;
+   }
+   .imagen-about-us {
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   }
+   .contendedor-inicio .contenido-textos {
+   width: 55%;
+   display: inline-block;
+   }
+   .contenido-textos h3 {
+   margin-bottom: 15px;
+   }
+   .contenido-textos h3 span {
+   background: #4d0686;
+   color: #fff;
+   border-radius: 50%;
+   display: inline-block;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   padding: 2px;
+   box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+   margin-right: 5px;
+   }
+   .contenido-textos p {
+   padding: 0px 0px 45px 15px;
+   font-weight: 300;
+   text-align: justify;
+   }
+   /*juegos*/
+   .juegos {
+   background: #f2f2f2;
+   }
+   .galeria-jue {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   }
+   .imagen-jue {
+   width: 24%;
+   margin-bottom: 10px;
+   height: 200px;
+   overflow: hidden;
+   position: relative;
+   cursor: pointer;
+   box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+   }
+   .imagen-jue&gt;img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+   }
+   .hover-galeria {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   transform: scale(0);
+   background: hsla(273, 91%, 27%, 0.7);
+   transition: transform .5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   }
+   .hover-galeria img {
+   width: 50px;
+   }
+   .hover-galeria p {
+   color: #fff;
+   }
+   .imagen-jue:hover .hover-galeria {
+   transform: scale(1);
+   }
+   /* Footer */
+   footer {
+   background: #414141;
+   padding: 60px 0 30px 0;
+   margin: auto;
+   overflow: hidden;
+   }
+   .contenedor-footer {
+   display: flex;
+   width: 90%;
+   justify-content: space-evenly;
+   margin: auto;
+   padding-bottom: 50px;
+   border-bottom: 1px solid #ccc;
+   }
+   .content-foo {
+   text-align: center;
+   }
+   .content-foo h4 {
+   color: #fff;
+   border-bottom: 3px solid #af20d3;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+   }
+   .content-foo a {
+   color: #ccc;
+   }
+   .titulo-final {
+   text-align: center;
+   font-size: 24px;
+   margin: 20px 0 0 0;
+   color: #9e9797;
+   }
+   /* imagenes rese&ntilde;as */
+   .imagen-zelda {
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   }
+   .imagen-reach {
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   }
+   .imagen-gears {
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   }
+   .imagen-biosh {
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   }
+   .imagen-alien {
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   }
+   .imagen-call {
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   }
+   .imagen-des {
+   width: 30%;
+   display: inline-block;
+   vertical-align: top;
+   }
+   /* Formulario de contacto */
+   .form {
+   background-color: #642a73;
+   width: 90%;
+   margin: auto;
+   max-width: 400px;
+   border-radius: 1em;
+   padding: 3.5em 1.5em;
+   }
+   .form_container {
+   width: 100%;
+   display: grid;
+   gap: 1em;
+   grid-auto-columns: 100%;
+   }
+   .form_title {
+   text-align: center;
+   font-size: 1.9rem;
+   margin-bottom: .4em;
+   color: #fff;
+   }
+   .form_input {
+   font-size: 1rem;
+   padding: .8em 1em;
+   outline: none;
+   border: none;
+   border: 1px solid #642a73;
+   border-radius: 0.2em;
+   }
+   .form_input--message {
+   resize: none;
+   padding: 1.8em 1em;
+   margin-bottom: .5em;
+   }
+   .form_cta {
+   background-color: lightgrey;
+   border: none;
+   font-weight: 300;
+   font-size: 1rem;
+   padding: .7em 0;
+   border-radius: .2em;
+   cursor: pointer;
+   font-weight: 400;
+   }
+   /* Color de la letra del carrusel*/
+   .carousel-item p {
+   color: rgb(255, 255, 255);
+   background-color: #642a73;
+   }
+   .carousel-item h5 {
+   color: rgb(255, 255, 255);
+   background-color: #642a73;
+   }

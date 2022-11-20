@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title startreview
+  body 
+  include ../templates/head.pug
+main
+  section.contenedor.inicio
+    h2#ini.titulo Review Zelda Skyward Sword
+    .contendedor-inicio
+      img.imagen-zelda(src='configuracion/img/zelda.jpeg' alt='')
+      .contenido-textos
+        p
+          | The Legend of Zelda: Skyward Sword is an action-adventure game for the Wii video game console. Developed by Nintendo Entertainment Analysis and Development with the collaboration of Monolith Soft. It was released on November 18, 2011 in Europe and on November 20, 2011 in the Americas. The game uses the mandatory Wii MotionPlus peripheral. It will be sold with a gold Wii Remote Plus or standalone and both will include a CD with orchestrated pieces from the franchise in the first units.
+          | Skyward Sword is an action-adventure video game in which players assume the role of series protagonist Link through a world populated by monsters and dungeons. The player controls Link in a third-person perspective and in a three-dimensional space. In terms of structure and development the game is linear. Link can run short distances, but other actions such as sprinting, climbing and carrying heavy objects are limited by a stamina meter, which recharges after a few seconds when he does not perform actions that deplete it.When it is completely depleted, Link's movement speed is reduced and he cannot use his weapons until the meter is recharged.
+          | Fighting enemies, which appear both in the world and in dungeons, depends on Link's use of his sword and shield. Link's sword moves are mapped to the direction in which the player moves the Wiimote, or makes other moves such as a lunge. By raising the Wiimote, the sword accumulates energy that can be unleashed in a wave of energy that can be used to activate environmental elements such as magic switches. The shield is controlled with the Nunchuck and can be used to reflect attacks. Link's health is represented with hearts, and he takes damage each time he is hit. If all hearts are lost, the game ends.
+  .iconos-sociales
+    center
+      a(href='https://www.nintendo.com/es-mx/store/products/the-legend-of-zelda-skyward-sword-hd-switch/' target='_blank')
+        img(loading='lazy' alt='Sígueme en Facebook' height='35' width='35' src='configuracion/img/carrito.png' title='Compralo en su pagina oficial')
+  // Aquí van los estilos
+  style.
+    .iconos-sociales img{
+    transition:all 0.5s ease-out;
+    }
+    .iconos-sociales img:hover{
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform:translate(0px, -5px);
+    }
+  h1(align='center')
+    font(color='black')
+      i Trailer of The Legend Of Zelda Skyward Sword
+  center
+    video(src='videos/Zelda.mp4' controls='controls' width='600' height='330')
+  br
+// fin de que es este proyecto
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js')
+// Alertas con Sweetalert
+script(src='//cdn.jsdelivr.net/npm/sweetalert2@11')
+script(src='assets/js/Alerts/sweetAlert.js')
+// Fin de Alertas con Sweetalert
+
+
+
+  include ../templates/footer.pug

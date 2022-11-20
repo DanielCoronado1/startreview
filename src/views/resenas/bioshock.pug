@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title startreview
+  body 
+  include ../templates/head.pug
+  main
+  section.contenedor.inicio
+    h2#ini.titulo Bioshock Review
+    .contendedor-inicio
+      img.imagen-biosh(src='configuracion/img/biosh1.jpeg' alt='')
+      .contenido-textos
+        p BioShock is a first-person shooter and horror video game developed by Irrational Games (formerly known as 2K Boston/2K Australia), released on August 21, 2007 in North America for the Windows operating system and Xbox 360 console, three days later in some countries in Europe and Australia. The game takes place in a 1960's uchronia, and puts the player in the role of Jack, a survivor of a plane crash, who must then explore the city of Rapture, while fighting mutated humans with special powers and robots designed to attack certain targets automatically. The game, which is in the first-person shooter category, incorporates elements of role-playing, biopunk, survival horror and stealth, and is therefore described by its developers and Levine as a "spiritual sequel" to System Shock 2. BioShock is a first-person shooter video game with role-playing customizations, stealth game elements and bits of survival horror that makes the game practically a sandbox, very similar to System Shock 2.
+
+
+  .iconos-sociales
+    center
+      a(href='https://store.steampowered.com/app/7670/BioShock/?l=spanish' target='_blank')
+        img(loading='lazy' alt='Sígueme en Facebook' height='35' width='35' src='configuracion/img/carrito.png' title='Compralo en su pagina oficial')
+  // Aquí van los estilos
+  style.
+    .iconos-sociales img{
+    transition:all 0.5s ease-out;
+    }
+    .iconos-sociales img:hover{
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform:translate(0px, -5px);
+    }
+  h1(align='center')
+    font(color='black')
+      i Trailer of Bioshock
+  center
+    video(src='videos/Bioshock.mp4' controls='controls' width='600' height='330')
+  br
+// fin de que es este proyecto
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js')
+// Alertas con Sweetalert
+script(src='//cdn.jsdelivr.net/npm/sweetalert2@11')
+script(src='assets/js/Alerts/sweetAlert7.js')
+
+  include ../templates/footer.pug

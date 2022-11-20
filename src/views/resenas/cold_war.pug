@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title startreview
+  body 
+  include ../templates/head.pug
+
+main
+  section.contenedor.inicio
+    h2#ini.titulo Review of Call Of Duty Cold War
+    .contendedor-inicio
+      img.imagen-call(src='configuracion/img/callof.jpeg' alt='')
+      .contenido-textos
+        p
+          | Call of Duty: Black Ops Cold War is a first-person shooter video game developed by Treyarch and Raven Software and published by Activision. It is the fifth Black Ops installment and the tenth Call of Duty. Chronologically the game is set after the events of Call of Duty: Black Ops. The game is also the first in the Call of Duty saga to have a connection to other standalone titles: Call of Duty: Modern Warfare and Call of Duty: Warzone. The game was released on November 13, 2020.
+          | Call of Duty: Black Ops Cold War takes place after the events of Call of Duty: Black Ops during the Cold War and is based on real events. Adler is supported by Call of Duty: Black Ops characters Mason, Woods and Hudson. With new characters including Sims, Adler's MACV-SOG friends, Mossad repairman Lazar and MI6 officer Park. Players assume a custom character for the campaign, code-named "Bell," with the ability to choose their intelligence agency, skin tone, nationality and gender, as well as different personality traits that provide in-game advantages. The campaign features multiple endings, depending on the player's choice throughout the campaign.
+          | Black Ops Cold War transports players into the heart of the volatile geopolitical battle of the Cold War in the early 1980s. Nothing is as it seems in the riveting single-player campaign, where players come face-to-face with rich historical figures and inconvenient truths as they battle across the globe in iconic Cold War settings such as East Berlin, Vietnam, KGB headquarters and more.
+          | The plot of Black Ops Cold War also ties in with the stories of Call of Duty: Modern Warfare and Warzone.
+
+  .iconos-sociales
+    center
+      a(href='https://www.callofduty.com/es/blackopscoldwar/buy')
+        img(loading='lazy' alt='Sígueme en Facebook' height='35' width='35' src='configuracion/img/carrito.png' title='Compralo en su pagina oficial')
+  // Aquí van los estilos
+  style.
+    .iconos-sociales img{
+    transition:all 0.5s ease-out;
+    }
+    .iconos-sociales img:hover{
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform:translate(0px, -5px);
+    }
+  h1(align='center')
+    font(color='black')
+      i Trailer of Call Of Duty Cold War
+  center
+    video(src='videos/Cod War.mp4' controls='controls' width='600' height='330')
+  br
+// fin de que es este proyecto
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js')
+// Alertas con Sweetalert
+script(src='//cdn.jsdelivr.net/npm/sweetalert2@11')
+script(src='assets/js/Alerts/sweetAlert8.js')
+// Fin de Alertas con Sweetalert
+
+include ../templates/footer.pug

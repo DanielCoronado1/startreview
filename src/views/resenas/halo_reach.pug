@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title startreview
+  body 
+  include ../templates/head.pug
+
+main
+  section.contenedor.inicio
+    h2#ini.titulo Review of Halo Reach
+    .contendedor-inicio
+      img.imagen-reach(src='configuracion/img/reach.jpeg' alt='')
+      .contenido-textos
+        p
+          | Halo Reach is a first-person shooter video game developed by Bungie and published by Microsoft Game Studios for the Xbox 360 console and later backward compatible with Xbox One (exclusive to Microsoft for these two consoles). It is the sixth video game in the Halo saga, as well as its third published video game. It was first announced in 2009 at the Spike Video Game Awards.
+          | Halo: Reach was officially announced on June 1, 2009 at the press conference held by Jojosoft during the Electronic Entertainment Expo in 2009 where the first preview of the game was shown. Since the release of this game, the Halo series began to be developed by 343 Industries.
+          | The game takes place in the year 2552, where humanity is at war with the Covenant. The player controls a new character named Noble 6, a super soldier member of Team Noble during the battle in the human colony of Reach. An interesting detail of the game is that you can customize your SPARTAN, remaining so in all game modes, both multiplayer and campaign. There are many things available to the player to customize the player character, such as helmets, armor, etc., which are unlocked by earning money or points by passing campaign missions, playing multiplayer games, etc..
+
+
+  .iconos-sociales
+    center
+      a(href='https://store.steampowered.com/app/1064220/Halo_Reach/' target='_blank')
+        img(loading='lazy' alt='Sígueme en Facebook' height='35' width='35' src='configuracion/img/carrito.png' title='Compralo en su pagina oficial')
+  // Aquí van los estilos
+  style.
+    .iconos-sociales img{
+    transition:all 0.5s ease-out;
+    }
+    .iconos-sociales img:hover{
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform:translate(0px, -5px);
+    }
+  h1(align='center')
+    font(color='black')
+      i Trailer of Halo Reach
+  center
+    video(src='videos/HaloReach.mp4' controls='controls' width='600' height='330')
+  br
+// fin de que es este proyecto
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js')
+// Alertas con Sweetalert
+script(src='//cdn.jsdelivr.net/npm/sweetalert2@11')
+script(src='assets/js/Alerts/sweetAlert3.js')
+// Fin de Alertas con Sweetalert
+
+
+
+
+include ../templates/footer.pug

@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title startreview
+  body 
+  include ../templates/head.pug
+
+main
+  section.contenedor.inicio
+    h2#ini.titulo Review of Mario Kart Wii
+    .contendedor-inicio
+      img.imagen-Mario(src='configuracion/img/mariok.jpeg' alt='')
+      .contenido-textos
+        p
+        | Mario Kart Wii is a racing video game developed and distributed by Nintendo for the Wii console. It is the sixth installment in the Mario Kart series (excluding two arcade games) and the second to use Nintendo's Wi-Fi connection. The game was released worldwide in April 2008.
+        | In this game, Mario and company compete in crazy, fun and crowded races in the Champi&ntilde;n Kingdom, this time with a gameplay very similar to that of the previous game, Mario Kart DS released on the Nintendo DS console. A new feature in Mario Kart Wii is that, in the game, motorcycles can also be used, in addition to karts. The game was presented during the 2007 E3 conference for Wii, shown in a trailer featuring some of the series' key characters, new tracks and other details from past series.
+        | It was also shown that the controller for the game is primarily the Wiimote and that in combination with the Wii Wheel accessory it makes for a much more realistic experience for the player. In addition, one of the main features of the game is the incorporation of an online mode through Nintendo's Wi-Fi connection, where the player could compete with up to 12 players at the same time, however, the connection was discontinued in 2014. In addition, many innovations have been added to the game, compared to previous versions of the Mario Kart series, where the gameplay was practically the same. Now, in Mario Kart Wii, several improvements have been added, for example, to be able to choose a Mii as a character, (which is created in the Mii Channel of the Wii console), as well as stunts of the karts or motorcycles that can be performed in the middle of the game.
+        | As mentioned above, the game's main controller is the Wii Remote Controller in combination with the Wii Wheel, but it can also be played with the Nintendo GameCube Controller, the Wii Classic Controller, or simply the Wii Remote Controller in combination with the Nunchuk. In the game, the controller can be configured as manual or automatic. In the automatic mode the skidding is done automatically, but the possibility of turbocharging is lost by this system. To maneuver the controller and be able to play, you must move the Wii Wheel as if you were driving a real car. This causes that, in the game, the character together with the kart or motorcycle, move exactly in the direction in which the player is moving the controller.
+        | Within the game, in addition to driving, different movements can be performed by maneuvering the controller (regardless of whether the game is played with the Wii Wheel or another controller). For example, you can do pirouettes in the air, make turbos, or perform a "wheelie" (the latter only if you choose a motorcycle). The ability called "snaking", which allowed the player to obtain a series of continuous turbos by repeatedly drifting, has been removed in favor of a new gameplay system. If you try to perform such a trick, you will not be able to achieve it, since, even if you perform the required button combination, you will only be able to obtain a single turbo within a certain time.
+
+  .iconos-sociales
+    center
+      a(href='https://gameplanet.com/mario-kart-stand-alone-wii.html')
+        img(loading='lazy' alt='Sígueme en Facebook' height='35' width='35' src='configuracion/img/carrito.png' title='Compralo en su pagina oficial')
+  // Aquí van los estilos
+  style.
+    .iconos-sociales img{
+    transition:all 0.5s ease-out;
+    }
+    .iconos-sociales img:hover{
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform:translate(0px, -5px);
+    }
+  h1(align='center')
+    font(color='black')
+      i Trailer of Mario Kart Wii
+  center
+    video(src='videos/MarioKart.mp4' controls='controls' width='600' height='330')
+  br
+// fin de que es este proyecto
+// Alertas con Sweetalert
+script(src='//cdn.jsdelivr.net/npm/sweetalert2@11')
+script(src='assets/js/Alerts/sweetAlert2.js')
+// Fin de Alertas con Sweetalert
+
+
+include ../templates/footer.pug

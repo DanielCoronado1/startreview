@@ -1,0 +1,68 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title START review
+  meta(name='theme-color' content='#F0DB4F')
+  link(rel='shortcut icon' href='/logingisela/configuracion/img/logostart.jpeg' type='image/x-icon')
+  link(rel='stylesheet', href='/css/estilos.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&display=swap' rel='stylesheet')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet')
+  script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+  script(src='//code.tidio.co/fhfeipobvtw6ltjoqc6lltbf7g9fl9yl.js' async='')
+  link(rel='manifest' href='/manifest.json')
+  link(rel='apple-touch-icon' href='/example.png')
+  script(src='../registerWorker.js')
+// Navegadores de inicio
+
+
+nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+  .container-fluid
+    a.navbar-brand(href='/') START review
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#mynavbar')
+      span.navbar-toggler-icon
+    #mynavbar.collapse.navbar-collapse
+      ul.navbar-nav.me-auto
+        li.nav-item
+          a#subida.nav-link(href='/') Home
+        li.nav-item
+          a.nav-link(href='/') Sign Out
+// fin de navegadores de inicio
+// inicio del heder de bienvenida y efecto wave (ola)
+
+// fin de navegadores de inicio
+center
+  h1 Show Table
+  #tbl_datos
+  #modal_mod_user
+  button.btn.btn-primary(onclick='create_table()') Show Table
+  button.btn.btn-success(onclick='open_reg_modal()') Add Rating
+// The Modal
+#modal_add_user.modal.fade
+  .modal-dialog
+    .modal-content
+      // Modal Header
+      .modal-header
+        h4.modal-title Add Rating
+      // Modal body
+      .modal-body
+        .form-group
+          label(for='autor') Autor
+          input#autor.form-control(type='text' name='autor')
+          label(for='nombre_juego') Game Name
+          input#nombre_juego.form-control(type='text' name='nombre_juego')
+          label(for='calificacion') Rating
+          input#calificacion.form-control(type='text' name='calificacion')
+      // Modal footer
+      .modal-footer
+        button.btn.btn-primary(onclick='agregar_reg()' type='button') Add
+        button.btn.btn-danger(type='button' data-bs-dismiss='modal') Cancel 
+script.
+  function open_reg_modal() {
+  $('#modal_add_user').modal('toggle');
+  }
+script(src='assets/js/create_table.js')
